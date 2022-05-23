@@ -2,7 +2,6 @@ import React from 'react';
 
 const CommentList = ({ comments }) => {
   const renderedComments = comments.map((comment) => {
-    console.log(comment.status);
     let content;
     if (comment.status === 'approved') {
       content = comment.content;
